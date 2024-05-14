@@ -1,4 +1,5 @@
 import Banner from "./components/banner/Banner";
+import Contact from "./components/contact/Contact";
 import Features from "./components/features/Features";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
@@ -18,6 +19,7 @@ function App() {
           <Projects />
           <Resume />
           <Testimonial />
+          <Contact />
         </div>
       </div>
     </>

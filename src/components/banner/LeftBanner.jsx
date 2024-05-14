@@ -1,11 +1,8 @@
 import React from "react";
 
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaFigma, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import { FaFigma } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
