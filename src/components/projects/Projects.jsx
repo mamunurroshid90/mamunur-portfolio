@@ -15,7 +15,7 @@ const Projects = () => {
           desc="my projects"
         />
       </div>
-      <div className=" grid grid-cols-3 gap-14">
+      <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCart
           title="SOCIAL MEDIA CLONE"
           desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"

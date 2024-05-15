@@ -20,7 +20,7 @@ const Resume = () => {
         <Title title="7+ YEARS OF EXPERIENCE" desc="My Resume" />
       </div>
       <div>
-        <ul className=" w-full grid grid-cols-4 text-center">
+        <ul className=" w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 text-center">
           <li
             onClick={() =>
               setEducationData(true) &

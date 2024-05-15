@@ -95,8 +95,8 @@ const Testimonial = () => {
         <Slider {...settings}>
           {/* 1st slider */}
           <div className=" w-full">
-            <div className=" w-full h-[500px] flex justify-between">
-              <div className=" w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne p-8 rounded-lg flex flex-col gap-8">
+            <div className=" w-full h-auto flex flex-col lgl:flex-row justify-between">
+              <div className=" w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne p-8 rounded-lg flex flex-col gap-8">
                 <img
                   className=" h-72 rounded-lg object-cover"
                   src={testimonialOne}
@@ -114,8 +114,8 @@ const Testimonial = () => {
                   </p>
                 </div>
               </div>
-              <div className=" w-[60%] h-full flex flex-col justify-between">
-                <img className=" w-[20%]" src={quote} alt="quote" />
+              <div className=" w-full lgl:w-[60%] h-full flex flex-col justify-between">
+                <img className=" w-20 lgl:w-32" src={quote} alt="quote" />
                 <div className=" w-full h-[70%] py-8 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne rounded-lg px-8 flex flex-col justify-between gap-8">
                   <div className=" flex justify-between items-center py-6 border-b-2 border-b-gray-900">
                     <div>
