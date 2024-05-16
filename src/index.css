@@ -26,6 +26,9 @@
 .active {
   color: white;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 
 /* .slick-arrow, */
 /* .slick-arrow {
