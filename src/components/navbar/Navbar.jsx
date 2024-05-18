@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 
 import { Link } from "react-scroll";
-import { logo } from "../../assets/index";
 import { navLinksData } from "../../constants";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { p_logo } from "../../assets/index";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  // console.log(showMenu);
   return (
     <div className=" w-full h-24 mx-auto sticky top-0 z-50 bg-bodyColor flex justify-between items-center font-titleFont border-b-[1px] border-gray-600">
-      <div>
-        <img src={logo} alt="logo" />
+      <div className=" w-[70px] h-[70px] object-cover ">
+        <img
+          className=" w-full h-full rounded-full border-gray-700 border-2"
+          src={p_logo}
+          alt="logo"
+        />
       </div>
       <div>
         <ul className=" hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -44,8 +47,12 @@ const Navbar = () => {
         {showMenu && (
           <div className=" w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className=" flex flex-col gap-4 relative ">
-              <div>
-                <img className=" w-32" src={logo} alt="logo" />
+              <div className=" w-[70px] h-[70px] object-cover ">
+                <img
+                  className=" w-full h-full rounded-full border-gray-700 border-2"
+                  src={p_logo}
+                  alt="logo"
+                />
               </div>
               <ul className=" flex flex-col gap-4">
                 {navLinksData.map((item) => (
