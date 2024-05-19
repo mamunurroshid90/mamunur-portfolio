@@ -8,64 +8,53 @@ const Education = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className=" flex flex-col lgl:flex-row justify-between items-center gap-10 lgl:gap-20"
+      className=" "
     >
       {/* part one  */}
       <div>
         <div className=" py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className=" text-sm text-designColor tracking-[4px]">
-            1998 - 2010
+            2011 - 2022
           </p>
           <h2 className=" text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
-        <div className=" mt-6 lgl:mt-14 h-[1000px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCart
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            desc="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
-          <ResumeCart
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            desc="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-          />
-          <ResumeCart
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            desc="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          />
-        </div>
-      </div>
-      {/* part two  */}
-      <div>
-        <div className=" py-6 lgl:py-12 font-titleFont">
-          <p className=" text-sm text-designColor tracking-[4px]">
-            2010 - 2022
-          </p>
-          <h2 className=" text-3xl md:text-4xl font-bold">Job Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 h-[1000px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCart
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            desc="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCart
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            desc="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCart
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            desc="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
+        <div className="  grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+          <div className="mt-3 lgl:mt-14 h-auto border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
+            <div className=" flex flex-col gap-6">
+              <ResumeCart
+                title="Honors of Bangla Department."
+                subTitle="Dhaka College (2017 - 22)"
+                result="2.50/4"
+                desc="The Bangla Department excels in Bengali language, literature, and culture studies, fostering academic excellence, research, and preserving linguistic heritage through innovative teaching and scholarship."
+              />
+            </div>
+            <div className=" flex flex-col gap-10">
+              <ResumeCart
+                title="Higher Secondary Certificate."
+                subTitle="TMKM (2014 - 16)"
+                result="4.86/5"
+                desc="HSC (Higher School Certificate) is a secondary school qualification in Dhaka, assessing students' academic performance for college entrance and further education opportunities."
+              />
+            </div>
+          </div>
+          <div className="mt-3 lgl:mt-14 h-auto border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
+            <div className=" flex flex-col gap-10">
+              <ResumeCart
+                title="Secondary School Certificate."
+                subTitle="TIKM (2014)"
+                result="5.00/5"
+                desc="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+              />
+            </div>
+            <div className=" flex flex-col gap-10">
+              <ResumeCart
+                title="Junior Dakhil Certificate."
+                subTitle="TIKM (2011)"
+                result="5.00/5"
+                desc="This is an examination conducted for students in Islamic religious schools (madrasahs) in Bangladesh, typically at the end of grade 8."
+              />
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>

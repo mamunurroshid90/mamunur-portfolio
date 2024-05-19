@@ -8,9 +8,9 @@ import { FaReact } from "react-icons/fa";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Web Designer.", "Front-end Developer."],
+    words: ["Professional Coder.", "FIGMA Designer.", "Frontend Developer."],
     loop: true,
-    typeSpeed: 20,
+    typeSpeed: 40,
     deleteSpeed: 10,
     delaySpeed: 2000,
   });
@@ -18,11 +18,11 @@ const LeftBanner = () => {
     <div className=" w-full lgl:w-1/2">
       <div className=" flex flex-col gap-3 pb-20">
         <h4 className=" text-lg font-normal capitalize">welcome to my world</h4>
-        <h1 className=" text-4xl md:text-6xl font-bold text-white">
+        <h1 className=" text-3xl  md:text-4xl mdl:text-5xl font-bold text-white">
           hi, i am{" "}
-          <span className=" text-designColor capitalize">john doe</span>
+          <span className=" text-designColor capitalize"> mamunur roshid</span>
         </h1>
-        <h2 className=" text-4xl font-bold text-white">
+        <h2 className=" text-2xl mdl:text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -30,10 +30,11 @@ const LeftBanner = () => {
             cursorColor="#ff014f"
           />
         </h2>
-        <p>
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+        <p className=" text-sm md:text-base">
+          I'm a Bangladeshi based web designer & front-end developer focused on
+          crafting clean & user-friendly experiences, I am passionate about
+          building excellent software that improves the lives of those around
+          me.
         </p>
       </div>
       <div className=" flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -42,15 +43,33 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className=" flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
+            <a
+              href="https://www.facebook.com/mamunroshid93"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaFacebookF />
+              </span>
+            </a>
+            <a
+              href="https://x.com/roshidmamun9090"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaTwitter />
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mamunroshid/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaLinkedinIn />
+              </span>
+            </a>
           </div>
         </div>
         <div>
