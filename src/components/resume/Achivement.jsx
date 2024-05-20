@@ -18,9 +18,9 @@ const Education = () => {
       <div>
         <div className=" py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className=" text-sm text-designColor tracking-[4px]">
-            2011 - 2022
+            2022 - 2024
           </p>
-          <h2 className=" text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <h2 className=" text-3xl md:text-4xl font-bold">My Achievements</h2>
         </div>
         <div className=" grid grid-cols-1 mdl:grid-cols-2 gap-10">
           <AchievementCart
