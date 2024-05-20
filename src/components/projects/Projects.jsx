@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../layouts/Title";
-import ProjectsCart from "../banner/ProjectsCart";
+import ProjectsCart from "./ProjectsCart";
 import { projectOne, projectTwo, projectThree } from "../../assets";
 
 const Projects = () => {
