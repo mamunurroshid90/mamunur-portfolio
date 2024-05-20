@@ -2,62 +2,79 @@ import React from "react";
 
 import ResumeCart from "./ResumeCart";
 import { motion } from "framer-motion";
-import { certificate_English_lifeTime } from "../../assets";
 import { certificate_git_gitHub } from "../../assets";
+import { certificate_English_lifeTime } from "../../assets";
 import { certificate_html_css } from "../../assets";
 import { certificate_leaderShip } from "../../assets";
-import AchievementCart from "./AchievementCart";
 
-const Achivement = () => {
+const Education = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className=" flex flex-col lgl:flex-row justify-between items-center gap-10 lgl:gap-20"
+      className=" "
     >
-      <div className="">
+      {/* part one  */}
+      <div>
         <div className=" py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className=" text-sm text-designColor tracking-[4px]">
-            1998 - 2010
+            2011 - 2022
           </p>
-          <h2 className=" text-3xl md:text-4xl font-bold">
-            Company Experience
-          </h2>
+          <h2 className=" text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
-        <div className=" mt-6 lgl:mt-14 h-[1000px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
-          <AchievementCart />
+        <div className=" grid grid-cols-1 mdl:grid-cols-2 gap-6 lg:gap-10">
+          <div className=" w-full h-[350px] p-6 bg-black rounded-xl group">
+            <div className=" w-full h-[250px] overflow-hidden object-cover rounded-lg group-hover:scale-105 duration-300">
+              <img
+                className=" w-full h-full rounded-2xl object-top"
+                src={certificate_html_css}
+                alt="certificate_html_css"
+              />
+            </div>
+            <div className=" text-2xl text-lightText text-center pt-2 font-bold">
+              <h3>This certificate is from Udemy</h3>
+            </div>
+          </div>
+          <div className=" w-full h-[350px] p-6 bg-black rounded-xl group">
+            <div className=" w-full h-[250px] overflow-hidden object-cover rounded-lg group-hover:scale-105 duration-300">
+              <img
+                className=" w-full h-full rounded-2xl object-top"
+                src={certificate_git_gitHub}
+                alt="certificate_git_gitHub"
+              />
+            </div>
+            <div className=" text-2xl text-lightText text-center pt-2 font-bold">
+              <h3>This certificate is from Udemy</h3>
+            </div>
+          </div>
+          <div className=" w-full h-[350px] p-6 bg-black rounded-xl group">
+            <div className=" w-full h-[250px] overflow-hidden object-cover rounded-lg group-hover:scale-105 duration-300">
+              <img
+                className=" w-full h-full rounded-2xl object-top"
+                src={certificate_English_lifeTime}
+                alt="certificate_English_lifeTime"
+              />
+            </div>
+            <div className=" text-2xl text-lightText text-center pt-2 font-bold">
+              <h3>This certificate is from English LifeTime</h3>
+            </div>
+          </div>
+          <div className=" w-full h-[350px] p-6 bg-black rounded-xl group">
+            <div className=" w-full h-[250px] overflow-hidden object-cover rounded-lg group-hover:scale-105 duration-300">
+              <img
+                className=" w-full h-full rounded-2xl object-top"
+                src={certificate_leaderShip}
+                alt="certificate_leaderShip"
+              />
+            </div>
+            <div className=" text-2xl text-lightText text-center pt-2 font-bold">
+              <h3>This certificate is from YSDI</h3>
+            </div>
+          </div>
         </div>
       </div>
-      {/* <div className="">
-        <div className=" py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className=" text-sm text-designColor tracking-[4px]">
-            2010 - 2022
-          </p>
-          <h2 className=" text-3xl md:text-4xl font-bold">Job Experience</h2>
-        </div>
-        <div className=" mt-6 lgl:mt-14 h-[1000px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCart
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            desc="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCart
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            desc="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCart
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            desc="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
-        </div>
-      </div> */}
     </motion.div>
   );
 };
 
-export default Achivement;
+export default Education;
