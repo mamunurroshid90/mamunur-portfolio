@@ -1,6 +1,5 @@
 import React from "react";
 
-import ResumeCart from "./ResumeCart";
 import { motion } from "framer-motion";
 import { certificate_git_gitHub } from "../../assets";
 import { certificate_English_lifeTime } from "../../assets";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import ResumeCart from "./ResumeCart";
+// import ResumeCart from "./ResumeCart";
 import { motion } from "framer-motion";
 
 const Experience = () => {
