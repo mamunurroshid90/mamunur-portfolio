@@ -42,7 +42,6 @@ const Contact = () => {
       setEmail("");
       setSubject("");
       setMessage("");
-      //   console.log(username, phoneNumber, email, subject, message);
     }
   };
 
